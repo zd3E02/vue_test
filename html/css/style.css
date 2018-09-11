@@ -1,4 +1,14 @@
 /* StyleSheet */
-tuyoi {
-  color: red;
+@keyframes cloak-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+#app {
+  animation: cloak-in 1s;
+}
+
+#app[v-cloak] {
+  opacity: 0;
 }
